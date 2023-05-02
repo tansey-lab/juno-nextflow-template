@@ -1,11 +1,11 @@
 nextflow.enable.dsl=2
 
 log.info """\
- You're now running a nextflow pipeline.
- """
+You're now running a nextflow pipeline.
+"""
 
 process myprocess {
-    // This is translated to the bsub -R parameter (memory)
+    // This is translated to the bsub -R "rusage[mem=XXX]" parameter (memory)
     memory '2 GB'
     // This is translated to the bsub -W parameter
     time '1h'
