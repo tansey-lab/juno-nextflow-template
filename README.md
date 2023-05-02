@@ -4,7 +4,7 @@ Demonstration / template for running nextflow workflows on the MSKCC Juno cluste
 ## Usage
 
 1. Clone this repo
-2. `juno_nextflow.sh` run examples/example.nf
+2. `./juno_nextflow.sh run examples/example.nf`
 
 ## TODOs
 

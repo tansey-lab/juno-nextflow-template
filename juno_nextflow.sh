@@ -22,8 +22,8 @@ fi
 export NEXTFLOW_CONFIG="${NEXTFLOW_CONFIG:=${SCRIPT_DIR}/nextflow.config}"
 
 # Set project specfic env variables
-mkdir -p ${HOME}/.singularity/cache
-export NXF_SINGULARITY_CACHEDIR="${NXF_SINGULARITY_CACHEDIR:=${HOME}/.singularity/cache}"
+mkdir -p ${HOME}/.singularity/cache/nextflow
+export NXF_SINGULARITY_CACHEDIR="${NXF_SINGULARITY_CACHEDIR:=${HOME}/.singularity/cache/nextflow}"
 
 # Run nextflow and pass through args
 exec "nextflow" -c "${NEXTFLOW_CONFIG}" "$@"
