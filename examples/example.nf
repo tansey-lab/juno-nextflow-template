@@ -24,7 +24,7 @@ process myprocess {
 
     script:
     """
-    echo $data > result
+    echo "$data" > result
     """
 }
 
